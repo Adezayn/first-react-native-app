@@ -11,7 +11,7 @@ import {
 import { foldersContainer } from "../data/folders";
 import { colorsPicker } from "../data/folders";
 import Modal from "react-native-modal";
-//import { useNavigation } from "@react-navigation/native";
+import { useNavigation } from "@react-navigation/native";
 
 // const FolderScreens = (props: any) => {
 //     console.log(props)
@@ -24,9 +24,9 @@ import Modal from "react-native-modal";
 //     )
 // }
 
-const FolderScreens = ({navigation}) => {
+const FolderScreens = () => {
 
-   // const navigation = useNavigation();
+    const navigation = useNavigation();
 
     const [foldersList, setFolders] = useState(foldersContainer);
     const [isModalVisible, setIsModalVisible] = useState(false);
