@@ -1,4 +1,4 @@
-export const foldersContainer = [
+export const foldersContainer : Array<{ name: string, description: string }>= [
     {name:"Tolu", description: "Notes about 2016"},
     {name:"Umar", description: "Notes about 2017"},
     {name:"Oyin", description: "Notes about 2018"},
